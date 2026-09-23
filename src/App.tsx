@@ -378,7 +378,7 @@ function App() {
         installPrompt={installEvt}
       />
       
-      <main className="main-content">
+      <main className="main-content" style={currentTab === 'dsa' || currentTab === 'devops' ? { minWidth: 0 } : undefined}>
         {currentTab === 'dashboard' && (
           <Dashboard 
             dsaProgress={dsaProgress}
